@@ -1,0 +1,43 @@
+
+@media only screen and (max-width: 500px)  {
+    .header {
+        min-height: 80px !important;
+      }
+    .header-call {
+        display: none;
+    }
+    .carousel-inner {
+        img {
+            min-height: 150px;
+        }
+    }
+    .filter {
+        font-size: 14px !important;
+    }
+    .pagination__list {
+        padding-left: 0;
+    }
+    #wishList{
+        right: -74px !important;
+    }
+    .modal-body {
+        padding: .25rem;
+    }
+     h4 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 400px)  {
+    #wishList{
+        right: -74 !important;
+        min-width: 290px !important;
+    }
+    #cart {
+        right: 14px !important;
+        min-width: 290px !important;
+    }
+    .card-body {
+        padding: .25rem;
+    }
+
+}
