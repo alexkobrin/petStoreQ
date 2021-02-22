@@ -46,7 +46,7 @@
                 <div v-for="pet in wishList" :key="pet.id" class="wishList-item">
                   <img class="petImage" :src="require(`~/static/animal/${petImage(pet.name)}.png`)" alt="">
                   <div class="wishList-info">
-                    <h4> Name: {{ pet.name.substring(0,10) }}</h4>
+                    <h4> Name: {{ pet.name.substring(0,8) }}</h4>
                     <span> Status: {{ pet.status }}</span>
                   </div>
                   <div>
@@ -93,7 +93,7 @@
                 <div v-for="pet in cart" :key="pet.id" class="cart-item">
                   <img class="petImage" :src="require(`~/static/animal/${petImage(pet.name)}.png`)" alt="">
                   <div class="cart-info">
-                    <h4> Name: {{ pet.name }}</h4>
+                    <p> Name: {{ pet.name }}</p>
                     <span> Status: {{ pet.status }}</span>
                   </div>
                   <div>
@@ -298,11 +298,13 @@ export default {
        align-items: center;
        margin-bottom: 1.5rem;
        height: 100px;
-       padding: .5rem;
        .petImage {
                 width: 80px;
                 height: 80px;
                 object-fit: cover;
               }
+     }
+     .card-body {
+    padding: .5rem;
      }
 </style>
